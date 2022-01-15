@@ -106,3 +106,32 @@ section{
     align-items: flex-start;
     line-height: 70px;
 }
+.footer{
+    text-align: center;
+    background-color: #eea8a8;
+    font-size: 12px;
+}
+/* ----Media Queries---- */
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }  
+    .players, .blogs, .courses{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog {
+      flex-direction: column;
+    }   
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px)  {
+   .container{
+       width: 100%;
+   }
+    .blogs{
+    grid-template-columns: repeat(1, 1fr);
+   } 
+}
+    
